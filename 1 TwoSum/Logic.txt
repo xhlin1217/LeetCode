@@ -1,0 +1,26 @@
+question hould ask
+1. dose the array contains duplicate element?
+2, will array come in like null or empty
+3. does the retuen order matter? [1,3] <==> [3,1]
+
+logic 1 double loop loop 
+Time: O(n^2)
+space: O(1)
+
+logic 2 - two pointer methods
+not apply in this question since it require sort array, but nice idea
+1. sort array
+2. left and right pointer
+3 basic on value of sum of left and right value shift left or right pointer
+time: basic on sorting array + O(n)
+space: basic on sorting array + O(1)
+
+
+logic 3 - hash map
+1. loop array(nums) wiht index
+    1.1 push element into hashmap if hashmap[num] is null
+    1.2 complement = target - num
+    1.3 if hashmap has complement item and the index does not same as current element
+        return complement's index and current index
+Time: O(n)
+space: O(n)
